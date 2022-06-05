@@ -1,0 +1,1285 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', 'Ionicons';
+}
+
+::selection {
+    background: #3F8EFC;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.download {
+    position: absolute;
+    top: calc(35% - 30px);
+    right: calc(50% - 115px);
+    width: 230px;
+    height: 60px;
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.075), rgb(107 33 215 / 0,05));
+    background-image: linear-gradient(to top, rgba(0,0,0,.075), rgb(112 31 203 / 0,05));
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.09),inset 0 1px 0 rgba(255,255,255,.04), 0 0 1px rgba(0,0,0,.3), 0 0 10px rgba(0,0,0,.1);
+    border-radius: 100px;
+    color: #000000;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 5px;
+    overflow: hidden;
+    transition: all .3s cubic-bezier(.67,.13,.1,.81), transform .15s cubic-bezier(.67,.13,.1,.81);
+}
+    .download:hover {
+        right: calc(50% - 200px);
+        width: 400px;
+    }
+
+    .download:active {
+        transform: translateY(3px);
+    }
+
+    .download:before, .download:after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        transition: all .3s cubic-bezier(.67,.13,.1,.81);
+    }
+
+    .download:before {
+        content: 'Нажмите';
+    }
+
+    .download:after {
+        content: 'Выберите платформу';
+        top: -60px;
+        opacity: 0;
+    }
+
+    .download:hover:after {
+        top: 0px;
+        opacity: 1;
+    }
+
+    .download:hover:before {
+        top: 60px;
+        opacity: 0;
+    }
+
+.platforms {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 290px);
+    height: 200px;
+    width: 580px;
+    background: #fff;
+    border-radius: 5px;
+    visibility: hidden;
+    transform: scale(.9);
+    opacity: 0;
+    overflow: hidden;
+    transition: all .3s cubic-bezier(.67,.13,.1,.81);
+}
+
+    .platforms:target {
+        visibility: visible;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .platforms a {
+        position: absolute;
+        top: 200px;
+        left: 10px;
+        width: 180px;
+        height: 180px;
+        border-radius: 5px;
+        color: #3F8EFC;
+        text-transform: uppercase;
+        transition: top .5s cubic-bezier(.67,.13,.1,.81);
+    }
+
+        .platforms a:nth-child(1) {
+            transition-delay: .1s;
+        }
+
+        .platforms a:nth-child(2) {
+            left: 200px;
+        }
+
+        .platforms a:nth-child(3) {
+            left: 390px;
+            transition-delay: .1s;
+        }
+
+    .platforms:target a {
+        top: 10px;
+    }
+
+    .platforms a:hover {
+        background: #E5F4FF;
+        box-shadow: 0 0 0 1px #A5CFFF;
+    }
+
+    .platforms a:before {
+        content: attr(data-os);
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .platforms a:after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 120px;
+        line-height: 120px;
+        text-align: center;
+        font-size: 300%;
+    }
+
+    .platforms a:nth-child(1):after {
+        content: url('1629311146145.png');
+    }
+
+    .platforms a:nth-child(2):after {
+        content: '\f227';
+    }
+
+    .platforms a:nth-child(3):after {
+        content: '\f2c5';
+    }
+
+.download3 {
+    position: absolute;
+    top: calc(35% - 30px);
+    right: calc(50% - 115px);
+    width: 230px;
+    height: 60px;
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.075), rgb(107 33 215 / 0,05));
+    background-image: linear-gradient(to top, rgba(0,0,0,.075), rgb(112 31 203 / 0,05));
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.09),inset 0 1px 0 rgba(255,255,255,.04), 0 0 1px rgba(0,0,0,.3), 0 0 10px rgba(0,0,0,.1);
+    border-radius: 100px;
+    color: #000000;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 5px;
+    overflow: hidden;
+    transition: all .3s cubic-bezier(.67,.13,.1,.81), transform .15s cubic-bezier(.67,.13,.1,.81);
+}
+
+    .download3:hover {
+        right: calc(50% - 200px);
+        width: 400px;
+    }
+
+    .download3:active {
+        transform: translateY(3px);
+    }
+
+    .download3:before, .download3:after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        transition: all .3s cubic-bezier(.67,.13,.1,.81);
+    }
+
+    .download3:before {
+        content: 'Нажмите';
+    }
+
+    .download3:after {
+        content: 'Выберите платформу';
+        top: -60px;
+        opacity: 0;
+    }
+
+    .download3:hover:after {
+        top: 0px;
+        opacity: 1;
+    }
+
+    .download3:hover:before {
+        top: 60px;
+        opacity: 0;
+    }
+
+.platforms3 {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 290px);
+    height: 200px;
+    width: 580px;
+    background: #fff;
+    border-radius: 5px;
+    visibility: hidden;
+    transform: scale(.9);
+    opacity: 0;
+    overflow: hidden;
+    transition: all .3s cubic-bezier(.67,.13,.1,.81);
+}
+
+    .platforms3:target {
+        visibility: visible;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .platforms3 a {
+        position: absolute;
+        top: 200px;
+        left: 10px;
+        width: 180px;
+        height: 180px;
+        border-radius: 5px;
+        color: #3F8EFC;
+        text-transform: uppercase;
+        transition: top .5s cubic-bezier(.67,.13,.1,.81);
+    }
+
+        .platforms3 a:nth-child(1) {
+            transition-delay: .1s;
+        }
+
+        .platforms3 a:nth-child(2) {
+            left: 200px;
+        }
+
+        .platforms3 a:nth-child(3) {
+            left: 390px;
+            transition-delay: .1s;
+        }
+
+    .platforms3:target a {
+        top: 10px;
+    }
+
+    .platforms3 a:hover {
+        background: #E5F4FF;
+        box-shadow: 0 0 0 1px #A5CFFF;
+    }
+
+    .platforms3 a:before {
+        content: attr(data-os);
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .platforms3 a:after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 120px;
+        line-height: 120px;
+        text-align: center;
+        font-size: 300%;
+    }
+
+    .platforms3 a:nth-child(1):after {
+        content: url('1629311146145.png');
+    }
+
+    .platforms3 a:nth-child(2):after {
+        content: '\f227';
+    }
+
+    .platforms3 a:nth-child(3):after {
+        content: '\f2c5';
+    }
+.download2 {
+    position: absolute;
+    top: calc(35% - 30px);
+    right: calc(50% - 115px);
+    width: 230px;
+    height: 60px;
+    background-image: -webkit-linear-gradient(bottom, rgba(0,0,0,.075), rgb(107 33 215 / 0,05));
+    background-image: linear-gradient(to top, rgba(0,0,0,.075), rgb(112 31 203 / 0,05));
+    box-shadow: inset 0 -1px 0 rgba(0,0,0,.09),inset 0 1px 0 rgba(255,255,255,.04), 0 0 1px rgba(0,0,0,.3), 0 0 10px rgba(0,0,0,.1);
+    border-radius: 100px;
+    color: #000000;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 5px;
+    overflow: hidden;
+    transition: all .3s cubic-bezier(.67,.13,.1,.81), transform .15s cubic-bezier(.67,.13,.1,.81);
+}
+
+    .download2:hover {
+        right: calc(50% - 200px);
+        width: 400px;
+    }
+
+    .download2:active {
+        transform: translateY(3px);
+    }
+
+    .download2:before, .download2:after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        opacity: 1;
+        transition: all .3s cubic-bezier(.67,.13,.1,.81);
+    }
+
+    .download2:before {
+        content: 'Нажмите';
+    }
+
+    .download2:after {
+        content: 'Выберите платформу';
+        top: -60px;
+        opacity: 0;
+    }
+
+    .download2:hover:after {
+        top: 0px;
+        opacity: 1;
+    }
+
+    .download2:hover:before {
+        top: 60px;
+        opacity: 0;
+    }
+.platforms2 {
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(50% - 290px);
+    height: 200px;
+    width: 580px;
+    background: #fff;
+    border-radius: 5px;
+    visibility: hidden;
+    transform: scale(.9);
+    opacity: 0;
+    overflow: hidden;
+    transition: all .3s cubic-bezier(.67,.13,.1,.81);
+}
+
+    .platforms2:target {
+        visibility: visible;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .platforms2 a {
+        position: absolute;
+        top: 200px;
+        left: 10px;
+        width: 180px;
+        height: 180px;
+        border-radius: 5px;
+        color: #3F8EFC;
+        text-transform: uppercase;
+        transition: top .5s cubic-bezier(.67,.13,.1,.81);
+    }
+
+        .platforms2 a:nth-child(1) {
+            transition-delay: .1s;
+        }
+
+        .platforms2 a:nth-child(2) {
+            left: 200px;
+        }
+
+        .platforms2 a:nth-child(3) {
+            left: 390px;
+            transition-delay: .1s;
+        }
+
+    .platforms2:target a {
+        top: 10px;
+    }
+
+    .platforms2 a:hover {
+        background: #E5F4FF;
+        box-shadow: 0 0 0 1px #A5CFFF;
+    }
+
+    .platforms2 a:before {
+        content: attr(data-os);
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        height: 60px;
+        line-height: 60px;
+        text-align: center;
+    }
+
+    .platforms2 a:after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 120px;
+        line-height: 120px;
+        text-align: center;
+        font-size: 300%;
+    }
+
+    .platforms2 a:nth-child(1):after {
+        content: url('1629311146145.png');
+    }
+
+    .platforms2 a:nth-child(2):after {
+        content: '\f227';
+    }
+
+    .platforms2 a:nth-child(3):after {
+        content: '\f2c5';
+    }
+
+.installer {
+    position: fixed;
+    top: calc(50% - 150px);
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 300px;
+    background: #fff;
+    border-radius: 5px;
+    visibility: hidden;
+    transform: scale(.9);
+    opacity: 0;
+    transition: all .3s cubic-bezier(.67,.13,.1,.81);
+}
+
+    .installer:target {
+        visibility: visible;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .installer a.back {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        font-size: 200%;
+        color: #bbb;
+    }
+
+        .installer a.back:before {
+            content: url('1629293954363.png');
+        }
+
+        .installer a.back:after {
+            content: 'Назад';
+            position: absolute;
+            top: 7px;
+            left: 30px;
+            height: 20;
+            line-height: 20px;
+            font-size: 40%;
+            text-align: center;
+            color: #cacaca;
+            border-radius: 5px;
+            pointer-events: none;
+            opacity: 0;
+            transition: all .2s cubic-bezier(.67,.13,.1,.81);
+        }
+
+        .installer a.back:hover:after {
+            left: 38px;
+            opacity: 1;
+        }
+
+    .installer a.close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 200%;
+        color: #bbb;
+    }
+
+        .installer a.close:before {
+            content: url('1629293649474.png');
+        }
+
+        .installer a.close:after {
+            content: 'Закрыть';
+            position: absolute;
+            top: 7px;
+            right: 30px;
+            height: 20;
+            line-height: 20px;
+            font-size: 40%;
+            text-align: center;
+            color: #cacaca;
+            border-radius: 5px;
+            pointer-events: none;
+            opacity: 0;
+            transition: all .2s cubic-bezier(.67,.13,.1,.81);
+        }
+
+        .installer a.close:hover:after {
+            right: 38px;
+            opacity: 1;
+        }
+
+    .installer .info {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 280px;
+        width: 180px;
+    }
+
+        .installer .info:before {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 180px;
+            height: 220px;            line-height: 220px;
+            text-align: center;
+            font-size: 1000%;
+            color: #3F8EFC;
+        }
+
+        .installer .info:after {
+            content: attr(data-weight);
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 180px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 100%;
+            letter-spacing: 5px;
+            color: #aaa;
+        }
+
+    .installer#windows .info:before {
+        content: url("1629313393257.png");
+    }
+
+    .installer#android .info:before {
+        content: url("1629313393257.png");
+    }
+
+    .installer#mac .info:before {
+        content: '\f227';
+    }
+
+    .installer#linux .info:before {
+        content: '\f2c5';
+    }
+
+    .installer .details {
+        position: absolute;
+        top: 10px;
+        left: 210px;
+        height: 200px;
+        width: 360px;
+        padding: 10px;
+    }
+
+        .installer .details p {
+            margin: 0px;
+            font-weight: bolder;
+            font-size: 120%;
+            color: #444;
+        }
+
+        .installer .details span {
+            color: #cacaca;
+        }
+
+        .installer .details ul {
+            padding-left: 0px;
+            list-style: none;
+            color: #888;
+        }
+
+            .installer .details ul li {
+                margin-left: 0px;
+                margin-bottom: 8px;
+                opacity: 0;
+                transition: all .3s cubic-bezier(.67,.13,.1,.81);
+            }
+
+                .installer .details ul li:before {
+                    content: url('1629313871168.png');
+                    margin-right: 10px;
+                    color: #ccc;
+                }
+
+    .installer:target .details ul li {
+        margin-left: 10px;
+        opacity: 1;
+    }
+
+        .installer:target .details ul li:nth-child(1) {
+            transition-delay: .1s;
+        }
+
+        .installer:target .details ul li:nth-child(2) {
+            transition-delay: .2s;
+        }
+
+        .installer:target .details ul li:nth-child(3) {
+            transition-delay: .3s;
+        }
+
+        .installer:target .details ul li:nth-child(4) {
+            transition-delay: .4s;
+        }
+
+        .installer:target .details ul li:nth-child(5) {
+            transition-delay: .5s;
+        }
+
+    .installer label {
+        position: absolute;
+        bottom: 20px;
+        right: 60px;
+        height: 40px;
+        width: 260px;
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+        .installer label input {
+            display: none;
+        }
+
+        .installer label span {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            background: #3F8EFC;
+        }
+
+        .installer label input:checked ~ span {
+            background: #87E544;
+            animation: downloadSuccess 3.1s ease;
+        }
+
+        .installer label span:after {
+            content: 'Скачать';
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            top: 0px;
+            left: 10%;
+        }
+
+        .installer label input:checked ~ span:after {
+            content: '✔ Успешно!';
+            animation: downloadState 3s;
+        }
+
+        .installer label span:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+            background: rgba(255,255,255,.2);
+        }
+
+        .installer label input:checked ~ span:before {
+            animation: downloadProgress 3s cubic-bezier(.67,.13,.1,.81);
+        }
+
+.installer3 {
+    position: fixed;
+    top: calc(50% - 150px);
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 300px;
+    background: #fff;
+    border-radius: 5px;
+    visibility: hidden;
+    transform: scale(.9);
+    opacity: 0;
+    transition: all .3s cubic-bezier(.67,.13,.1,.81);
+}
+
+    .installer3:target {
+        visibility: visible;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .installer3 a.back {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        font-size: 200%;
+        color: #bbb;
+    }
+
+        .installer3 a.back:before {
+            content: url('1629293954363.png');
+        }
+
+        .installer3 a.back:after {
+            content: 'Назад';
+            position: absolute;
+            top: 7px;
+            left: 30px;
+            height: 20;
+            line-height: 20px;
+            font-size: 40%;
+            text-align: center;
+            color: #cacaca;
+            border-radius: 5px;
+            pointer-events: none;
+            opacity: 0;
+            transition: all .2s cubic-bezier(.67,.13,.1,.81);
+        }
+
+        .installer3 a.back:hover:after {
+            left: 38px;
+            opacity: 1;
+        }
+
+    .installer3 a.close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 200%;
+        color: #bbb;
+    }
+
+        .installer3 a.close:before {
+            content: url('1629293649474.png');
+        }
+
+        .installer3 a.close:after {
+            content: 'Закрыть';
+            position: absolute;
+            top: 7px;
+            right: 30px;
+            height: 20;
+            line-height: 20px;
+            font-size: 40%;
+            text-align: center;
+            color: #cacaca;
+            border-radius: 5px;
+            pointer-events: none;
+            opacity: 0;
+            transition: all .2s cubic-bezier(.67,.13,.1,.81);
+        }
+
+        .installer3 a.close:hover:after {
+            right: 38px;
+            opacity: 1;
+        }
+
+    .installer3 .info3 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 280px;
+        width: 180px;
+    }
+
+        .installer3 .info3:before {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 180px;
+            height: 220px;
+            line-height: 220px;
+            text-align: center;
+            font-size: 1000%;
+            color: #3F8EFC;
+        }
+
+        .installer3 .info3:after {
+            content: attr(data-weight);
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 180px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 100%;
+            letter-spacing: 5px;
+            color: #aaa;
+        }
+
+    .installer3#windows3 .info3:before {
+        content: url("1630145276043.png");
+    }
+
+    .installer3#android3 .info3:before {
+        content: url("1629313393257.png");
+    }
+
+    .installer3#mac3 .info3:before {
+        content: '\f227';
+    }
+
+    .installer3#linux3 .info3:before {
+        content: '\f2c5';
+    }
+
+    .installer3 .details3 {
+        position: absolute;
+        top: 10px;
+        left: 210px;
+        height: 200px;
+        width: 360px;
+        padding: 10px;
+    }
+
+        .installer3 .details3 p {
+            margin: 0px;
+            font-weight: bolder;
+            font-size: 120%;
+            color: #444;
+        }
+
+        .installer3 .details3 span {
+            color: #cacaca;
+        }
+
+        .installer3 .details3 ul {
+            padding-left: 0px;
+            list-style: none;
+            color: #888;
+        }
+
+            .installer3 .details3 ul li {
+                margin-left: 0px;
+                margin-bottom: 8px;
+                opacity: 0;
+                transition: all .3s cubic-bezier(.67,.13,.1,.81);
+            }
+
+                .installer3 .details3 ul li:before {
+                    content: url('1629313871168.png');
+                    margin-right: 10px;
+                    color: #ccc;
+                }
+
+    .installer3:target .details3 ul li {
+        margin-left: 10px;
+        opacity: 1;
+    }
+
+        .installer3:target .details3 ul li:nth-child(1) {
+            transition-delay: .1s;
+        }
+
+        .installer3:target .details3 ul li:nth-child(2) {
+            transition-delay: .2s;
+        }
+
+        .installer3:target .details3 ul li:nth-child(3) {
+            transition-delay: .3s;
+        }
+
+        .installer3:target .details3 ul li:nth-child(4) {
+            transition-delay: .4s;
+        }
+
+        .installer3:target .details3 ul li:nth-child(5) {
+            transition-delay: .5s;
+        }
+
+    .installer3 label {
+        position: absolute;
+        bottom: 20px;
+        right: 60px;
+        height: 40px;
+        width: 260px;
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+        .installer3 label input {
+            display: none;
+        }
+
+        .installer3 label span {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            background: #3F8EFC;
+        }
+
+        .installer3 label input:checked ~ span {
+            background: #87E544;
+            animation: downloadSuccess 3.1s ease;
+        }
+
+        .installer3 label span:after {
+            content: 'Скачать';
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            top: 0px;
+            left: 10%;
+        }
+
+        .installer3 label input:checked ~ span:after {
+            content: '✔ Успешно!';
+            animation: downloadState 3s;
+        }
+
+        .installer3 label span:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+            background: rgba(255,255,255,.2);
+        }
+
+        .installer3 label input:checked ~ span:before {
+            animation: downloadProgress 3s cubic-bezier(.67,.13,.1,.81);
+        }
+.installer2 {
+    position: fixed;
+    top: calc(50% - 150px);
+    left: calc(50% - 300px);
+    width: 600px;
+    height: 300px;
+    background: #fff;
+    border-radius: 5px;
+    visibility: hidden;
+    transform: scale(.9);
+    opacity: 0;
+    transition: all .3s cubic-bezier(.67,.13,.1,.81);
+}
+
+    .installer2:target {
+        visibility: visible;
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    .installer2 a.back {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        width: 38px;
+        height: 38px;
+        line-height: 38px;
+        text-align: center;
+        font-size: 200%;
+        color: #bbb;
+    }
+
+        .installer2 a.back:before {
+            content: url('1629293954363.png');
+        }
+
+        .installer2 a.back:after {
+            content: 'Назад';
+            position: absolute;
+            top: 7px;
+            left: 30px;
+            height: 20;
+            line-height: 20px;
+            font-size: 40%;
+            text-align: center;
+            color: #cacaca;
+            border-radius: 5px;
+            pointer-events: none;
+            opacity: 0;
+            transition: all .2s cubic-bezier(.67,.13,.1,.81);
+        }
+
+        .installer2 a.back:hover:after {
+            left: 38px;
+            opacity: 1;
+        }
+
+    .installer2 a.close {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-size: 200%;
+        color: #bbb;
+    }
+
+        .installer2 a.close:before {
+            content: url('1629293649474.png');
+        }
+
+        .installer2 a.close:after {
+            content: 'Закрыть';
+            position: absolute;
+            top: 7px;
+            right: 30px;
+            height: 20;
+            line-height: 20px;
+            font-size: 40%;
+            text-align: center;
+            color: #cacaca;
+            border-radius: 5px;
+            pointer-events: none;
+            opacity: 0;
+            transition: all .2s cubic-bezier(.67,.13,.1,.81);
+        }
+
+        .installer2 a.close:hover:after {
+            right: 38px;
+            opacity: 1;
+        }
+
+    .installer2 .info2 {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        height: 280px;
+        width: 180px;
+    }
+
+        .installer2 .info2:before {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            width: 180px;
+            height: 220px;
+            line-height: 220px;
+            text-align: center;
+            font-size: 1000%;
+            color: #3F8EFC;
+        }
+
+        .installer2 .info2:after {
+            content: attr(data-weight);
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            width: 180px;
+            height: 60px;
+            line-height: 60px;
+            text-align: center;
+            font-size: 100%;
+            letter-spacing: 5px;
+            color: #aaa;
+        }
+
+    .installer2#windows2 .info2:before {
+        content: url("1629309199613.png");
+    }
+
+    .installer2#android .info2:before {
+        content: "";
+    }
+
+    .installer2#mac .info2:before {
+        content: '\f227';
+    }
+
+    .installer2#linux .info2:before {
+        content: '\f2c5';
+    }
+
+    .installer2 .details2 {
+        position: absolute;
+        top: 10px;
+        left: 210px;
+        height: 200px;
+        width: 360px;
+        padding: 10px;
+    }
+
+        .installer2 .details2 p {
+            margin: 0px;
+            font-weight: bolder;
+            font-size: 120%;
+            color: #444;
+        }
+
+.installer .details2 span {
+    color: #cacaca;
+}
+
+        .installer2 .details2 ul2 {
+            padding-left: 0px;
+            list-style: none;
+            color: #888;
+        }
+
+            .installer2 .details2 ul2 li2 {
+                margin-left: 0px;
+                margin-bottom: 8px;
+                opacity: 0;
+                transition: all .3s cubic-bezier(.67,.13,.1,.81);
+            }
+
+                .installer2 .details2 ul2 li2:before {
+                    content: url('1629313871168.png');
+                    margin-right: 10px;
+                    color: #ccc;
+                }
+
+    .installer2target .details2 ul2 li2 {
+        margin-left: 10px;
+        opacity: 1;
+    }
+
+        .installer2:target .details2 ul2 li2:nth-child(1) {
+            transition-delay: .1s;
+        }
+
+        .installer2:target .details2 ul2 li2:nth-child(2) {
+            transition-delay: .2s;
+        }
+
+        .installer2:target .details2 ul2 li2:nth-child(3) {
+            transition-delay: .3s;
+        }
+
+        .installer2:target .details2 ul2 li2:nth-child(4) {
+            transition-delay: .4s;
+        }
+
+        .installer2:target .details2 ul2 li2:nth-child(5) {
+            transition-delay: .5s;
+        }
+
+    .installer2 label {
+        position: absolute;
+        bottom: 20px;
+        right: 60px;
+        height: 40px;
+        width: 260px;
+        border-radius: 5px;
+        overflow: hidden;
+        cursor: pointer;
+    }
+
+        .installer2 label input {
+            display: none;
+        }
+
+        .installer2 label span {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            line-height: 40px;
+            text-align: center;
+            color: #fff;
+            background: #3F8EFC;
+        }
+
+        .installer2 label input:checked ~ span {
+            background: #87E544;
+            animation: downloadSuccess 3.1s ease;
+        }
+
+        .installer2 label span:after {
+            content: 'Скачать';
+            position: absolute;
+            width: 80%;
+            height: 100%;
+            top: 0px;
+            left: 10%;
+        }
+
+        .installer2 label input:checked ~ span:after {
+            content: '✔ Успешно!';
+            animation: downloadState 3s;
+        }
+
+        .installer2 label span:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+            left: 0px;
+            opacity: 0;
+            background: rgba(255,255,255,.2);
+        }
+
+        .installer2 label input:checked ~ span:before {
+            animation: downloadProgress 3s cubic-bezier(.67,.13,.1,.81);
+        }
+
+@keyframes downloadSuccess {
+    0%, 90% {
+        background: #3F8EFC;
+    }
+
+    100% {
+        background: #87E544;
+    }
+}
+
+@keyframes downloadState {
+    0%, 95% {
+        content: 'Скачивание...'
+    }
+
+    100% {
+        content: '✔ Успешно!'
+    }
+}
+
+@keyframes downloadProgress {
+    0% {
+        width: 5%;
+        opacity: 1;
+    }
+
+    35% {
+        width: 17%;
+    }
+
+    64% {
+        width: 51%;
+    }
+
+    81% {
+        width: 70%;
+    }
+
+    90% {
+        width: 86%;
+        opacity: 1;
+    }
+
+    100% {
+        width: 100%;
+        opacity: 0;
+    }
+}
