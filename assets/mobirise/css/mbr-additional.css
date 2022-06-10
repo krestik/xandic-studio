@@ -700,6 +700,108 @@ a {
     text-align: center;
   }
 }
+.cid-t8npnAjTat {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+.cid-t8npnAjTat .mbr-fallback-image.disabled {
+  display: none;
+}
+.cid-t8npnAjTat .mbr-fallback-image {
+  display: block;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+.cid-t8npnAjTat .timeline-element {
+  position: relative;
+}
+.cid-t8npnAjTat .timelines-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.cid-t8npnAjTat .image-wrapper img {
+  width: 100%;
+  object-fit: cover;
+}
+.cid-t8npnAjTat .mbr-section-title,
+.cid-t8npnAjTat .mbr-section-subtitle,
+.cid-t8npnAjTat .timeline-date {
+  text-align: center;
+}
+.cid-t8npnAjTat .iconBackground {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #6592e6;
+  margin-left: -9px;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .cid-t8npnAjTat .iconBackground {
+    left: 15px;
+    top: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .cid-t8npnAjTat .iconBackground {
+    top: 70px;
+    left: 50%;
+  }
+}
+.cid-t8npnAjTat .row:after {
+  content: "";
+  position: absolute;
+  background-color: #6592e6;
+  width: 2px;
+}
+@media (max-width: 767px) {
+  .cid-t8npnAjTat .row:after {
+    height: calc(100% + 30px);
+    top: 50px;
+    left: 15px;
+  }
+}
+@media (min-width: 768px) {
+  .cid-t8npnAjTat .row:after {
+    height: calc(100% - 20px);
+    top: 90px;
+    left: 50%;
+  }
+}
+@media (max-width: 767px) {
+  .cid-t8npnAjTat .timeline-date-wrapper,
+  .cid-t8npnAjTat .timeline-text-wrapper,
+  .cid-t8npnAjTat .image-wrapper {
+    padding: 0rem;
+    padding-left: 2rem;
+  }
+  .cid-t8npnAjTat .mbr-timeline-date {
+    text-align: left !important;
+  }
+  .cid-t8npnAjTat .mbr-timeline-title {
+    text-align: left;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .cid-t8npnAjTat .timeline-date-wrapper,
+  .cid-t8npnAjTat .timeline-text-wrapper {
+    padding: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .cid-t8npnAjTat .timeline-date-wrapper,
+  .cid-t8npnAjTat .timeline-text-wrapper,
+  .cid-t8npnAjTat .image-wrapper {
+    padding: 2rem;
+  }
+}
 .cid-t7SRMTF6kG {
   background-image: url("../../../assets/images/20220605-145413-1280x1280.jpeg");
 }
